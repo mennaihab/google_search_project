@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="en">
+        <meta 
+            name="description"
+            content="This is a google search page">
+        <meta
+            name="author"
+            content="menna ihab">
+        <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1.0">
+
+        <style>
+                .header_list li{
+                    /* to display list items beside each other */
+                   display: inline-block;
+                   margin-right: 100px;
+                   /* align lists to middle of its parent(ul) */
+                   vertical-align:middle;
+                }
+                input{
+                    border-radius:15px;
+                    /* to mahe solid line border */
+                    border: 2px solid gainsboro;
+                    padding:10px;
+                    
+                }
+                figure {
+                /* to remove margins */
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                /* to modify font of figcaption */
+                font-size: smaller;
+                }
+                .nav_footer_list li{
+                    display:inline-block;
+                    margin-right:30px;
+                    margin-bottom:20px ;
+                }
+                
+                #search_results{
+                    /* 2.5 means 2.5 times the size of the font */
+                    margin-left:2.5em; 
+                    color: rgb(165, 160, 160);
+                } 
+                article{
+                    margin-top:1em;
+                    margin-left:2em;
+                    margin-bottom:2em;
+                }
+                .aside_list{
+                    /* make the whole list as a block which is inline  */
+                    display:inline-block;
+                    margin-right:20px;
+                    /* remove bullets */
+                    list-style-type: none; 
+                }
+                #google_image{
+                    margin-left:30px;
+                }
+
+                .pages_list li{
+                    display:inline-block;
+                } 
+
+                .nav_footer_links {
+                    font-size:medium;
+                    color: gray;
+                    /* remove underlines */
+                    text-decoration: none;
+                }
+                .article_links {
+                    font-size:larger;
+                    color: rgb(9, 9, 156);
+                    text-decoration: none;
+                }
+                .aside_links {
+                    font-size:small;
+                    color: royalblue;
+                    text-decoration: none;
+                }
+                .page_links {
+                    font-size:medium;
+                    color:royalblue;
+                    text-decoration: none;
+                }
+
+                /* make underlines appears when moving mouse on it */
+                a:hover{
+                    text-decoration:underline;
+                }
+                #prev_link{
+                    margin-right: 30px;
+                }
+                #next_link{
+                    margin-left: 30px;
+                }
+                #bullet{
+                    color: rgb(15, 18, 199);
+                    font-size:20px;
+                }
+        </style>
+    </head>
+    <body>
+      <header class="header_list">
+          <ul>
+              <li><img src="images/google_logo.com.png" alt="google logo" width="100px" height="auto"></li>
+              <li><input type="search" name="search" value="build this webpage" size="30"></li>
+              <li><img src="images/record_icon.png" alt="record icon" width="30px" height="30px"></li>
+              <li>
+                <figure>
+                    <img src="images/search.png" alt="record icon" width="30px" height="25px">
+                    <figcaption>Michelle</figcaption>
+                </figure>
+              </li>
+              <li><img src="images/header_image.JPG" alt="your account"></li>
+          </ul>
+        </header>
+
+        <nav>
+            <ul class="nav_footer_list">
+                <li><a class="nav_footer_links"  href="https://google.com " title="go to all" style="margin-right:10px;">All</a></li>
+                <li><a class="nav_footer_links"  href="https://google.com " title="go to Videos">Videos</a></li>
+                <li><a class="nav_footer_links"  href="https://google.com " title="go to Maps">Maps</a></li>
+                <li><a class="nav_footer_links"  href="https://google.com " title="go to Shopping">Shopping</a></li>
+                <li><a class="nav_footer_links"  href="https://google.com " title="go to News">News</a></li>
+                <li><a class="nav_footer_links"  href="https://google.com " title="go to More">More</a></li>
+                <li><a class="nav_footer_links"  href="https://google.com " title="go to Search">Search</a></li>
+                <li><a class="nav_footer_links"  href="https://google.com " title="go to Tools">Tools</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- search result  indicator-->
+            <small id="search_results">About 13,210,000,000 results (0.63 seconds) </small>
+            <br>
+            <!--search results  -->
+            <article>
+                <p><a class="article_links" href="https://google.com ">Squarespace: Build a Website &minus; Website Builder</a></p>
+                <small>
+                        Squarespace is the all-in-one solution for anyone looking to create a beautiful<b> website </b>.<br>
+                        Domains, eCommerce, hosting, galleries, analytics, and 24/7 support ...
+                </small>
+            </article>
+            <article>
+                <p><a class="article_links" href="https://google.com ">Wix.com: Free Website Builder | Create a Free Website</a></p>
+                <small>
+                    Wix is user-friendly and makes it possible to<b> build </b>a professional<b> website </b> without knowing how<br>
+                    to code. In the Wix Editor, you can drag and drop any feature you ...
+                </small>
+            </article>
+            <article>
+                <p><a class="article_links" href="https://google.com ">BuiltWith Technology Lookup</a></p>
+                <small>
+                    Lead Generation.<b> Build </b>lists of<b> websites </b>from our database of 57,843+<b> we </b>technologies and<br>
+                    over 673 million<b> websites </b> showing which sites use shopping carts, ...
+                </small>
+            </article>
+            <article>
+                <p><a class="article_links" href="https://google.com ">Build Your Website &minus; Google Domains</a></p>
+                <small>
+                    <b>Build</b> your site, no coding required. Free resources from Google and professional tools to design<br> 
+                    and host your <b>website</b>.
+                </small>
+            </article>
+            <article>
+                <p><a class="article_links" href="https://google.com ">Webflow: Create a custom website | No &minus; code website builder</a></p>
+                <small>
+                    Learn how to create a<b> website </b>by trying Webflow for free! ... The Webflow Designer lets you<b> build </b>any<b> website </b>you<br>
+                        can imagine with the full power of HTML, ...
+                </small>
+            </article>
+            <article>
+                <p><a class="article_links" href="https://google.com ">Website Builder | Create a Free Website in Minutes &minus; GoDaddy</a></p>
+                <small>
+                    Start<b> creating </b>your free site or store by picking a template. · Add your content, products and <br>
+                    business info to make it yours. · Use built-in marketing to let ...
+                </small>
+            </article>
+            <article>
+                <p><a class="article_links" href="https://google.com ">Free Website Builder: Build a Free Website or Online Store ...</a></p>
+                <small>
+                    Weebly's free<b> website </b>b>builder makes it easy to create a<b> website </b>, blog, or online store. Find <br>
+                    customizable templates, domains, and easy-to-use tools for any ...
+                </small>
+            </article>
+            <article>
+                <p><a class="article_links" href="https://google.com ">Create Your Free Website | Free Website Builder | Website.com</a></p>
+                <small>
+                    Domain names,<b> web </b>hosting,<b> website </b> templates, and ecommerce solutions included. ...<b> Build</b><br> 
+                    client trust with a professional online presence.
+                </small>
+            </article>
+
+            <aside>
+                <!-- making 2 lists of links beside each other -->
+                <ul class="aside_list">
+                    <li><a class="aside_links" href="https://google.com ">How To Build A Website From Scratch?</a></li>
+                    <li><a class="aside_links" href="https://google.com ">How to Make a Website From Scratch</a></li>
+                    <li><a class="aside_links" href="https://google.com ">Yola - Make a Free Website</a></li>
+                    <li><a class="aside_links" href="https://google.com ">Powerful website builder tools for any project.&minus; Adobe</a></li>
+                    <li><a class="aside_links" href="https://google.com ">Build a Website: 6 Steps From 0 to Launch - Neil Patel</a></li>
+                </ul>
+                <ul class="aside_list">
+                <li><a class="aside_links" href="https://google.com ">Build a Website With an Easy-To-Use Website Builder</a></li>
+                <li><a class="aside_links" href="https://google.com ">WordPress Website Builder | Build Your Dream Website</a></li>
+                <li><a class="aside_links" href="https://google.com ">What Are the Different Ways to Build a Website? - DreamHost</a></li>
+                <li><a class="aside_links" href="https://google.com ">How To Build a Website with HTML </a></li>
+                <li><a class="aside_links" href="https://google.com ">Yola - Make a Free Website</a></li>
+                </ul>
+            </aside>
+
+            <img id="google_image" src="images/google.JPG">
+            <ul class="pages_list">
+                <li><a id="prev_link" class="page_links" href="https://google.com">Prev</a></li>
+                <li><a class="page_links" href="https://google.com">1</a></li>
+                <li><a class="page_links" href="https://google.com">2</a></li>
+                <li><a class="page_links" href="https://google.com">3</a></li>
+                <li><a class="page_links" href="https://google.com">4</a></li>
+                <li><a class="page_links" href="https://google.com">5</a></li>
+                <li><a class="page_links" href="https://google.com">6</a></li>
+                <li><a class="page_links" href="https://google.com">7</a></li>
+                <li><a class="page_links" href="https://google.com">8</a></li>
+                <li><a class="page_links" href="https://google.com">9</a></li>
+                <li><a class="page_links" href="https://google.com">10</a></li>
+                <li><a id="next_link" class="page_links" href="https://google.com">Next</a></li>
+            </ul>
+        </main>
+
+        <footer style="padding:30px; background-color:rgb(234, 240, 240);">
+            <!-- make vertical hr by setting width to 1 and display inline -->
+           Egypt<hr width="1"size="50px" style="display: inline;margin-Left: 10px">
+            <span id="bullet">&bull; Sedi Beshr &minus;</span>
+            <a class="nav_footer_links" href="https://google.com">From your device</a>&minus;
+            <a class="nav_footer_links" href="https://google.com">Update Location</a>
+            <hr style="margin-block-start:0px">
+            <ul class="nav_footer_list">
+                <li><a class="nav_footer_links" href="https://google.com">Help</a></li>
+                <li><a class="nav_footer_links" href="https://google.com">Send Feedback</a></li>
+                <li><a class="nav_footer_links" href="https://google.com">Privacy</a></li>
+                <li><a class="nav_footer_links" href="https://google.com">Terms</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
